@@ -148,8 +148,9 @@ btn.addEventListener("click",(evt)=>{
         document.querySelector(".nome").value=""
         document.querySelector(".client").textContent=""
         clearInterval(display)
-    }, 3000);
+    }, 6000);
  
     
      window.print()
 })
+

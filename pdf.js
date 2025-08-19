@@ -62,7 +62,7 @@ if (cont==2) {
 //*********************** */
 select.selectedIndex = "";
 document.querySelector(".unidade").value=""
-  window.print()
+ 
   
 
 })
@@ -87,6 +87,7 @@ btn.addEventListener("click",(evt)=>{
         document.querySelector(".client").textContent=""
         clearInterval(display)
     }, 3000);
-
-     
+ 
+    
+     window.print()
 })

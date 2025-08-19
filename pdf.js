@@ -15,6 +15,13 @@ var vtal = document.querySelector(".vtal")
 document.querySelector(".num").textContent="Documento"+" Nº  "+ Math.random()*1000
 
 
+var nomepro1 = document.querySelector(".nomepro1")
+var pre1 = document.querySelector(".precopro1")
+var quant1 = document.querySelector(".unidpro1")
+
+var nomepro2 = document.querySelector(".nomepro2")
+var pre2 = document.querySelector(".precopro2")
+var quant2 = document.querySelector(".unidpro2")
 
 
 
@@ -32,10 +39,30 @@ btn1.addEventListener("click",()=>{
  var unid = document.querySelector(".unidade").value
  cont++
  var soma = ""
- alert(preco[valor]*unid)
+// adicionar produtos
+if (cont==1) {
+  nomepro1.textContent=produto[valor]
+  quant1.textContent=unid
+   pre1.textContent=preco[valor]+",00"
+  v1.textContent=preco[valor]*unid+",00"
+   vtal.textContent=v1.textContent
+  
+}
+if (cont==2) {
+  nomepro2.textContent=produto[valor]
+  quant2.textContent=unid
+   pre2.textContent=preco[valor]+",00"
+  v2.textContent=preco[valor]*unid+",00"
+  
+  vtal.textContent=parseInt(v2.textContent)+parseInt(v1.textContent)+",00"
+  cont=0
+}
+ 
+
+//*********************** */
 select.selectedIndex = "";
 document.querySelector(".unidade").value=""
-  //window.print()
+  window.print()
   
 
 })

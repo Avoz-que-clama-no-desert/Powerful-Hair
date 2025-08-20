@@ -1,16 +1,22 @@
 var produto = [
-   "botox",
-   "shampoo",
-   "condicionador",
-   "esfoliante",
-]
-var preco=[
-    46.00,
-    17.00,
-    20.00,
-    35.00
-]
+    "botox",
+    "shampoo",
+    "condicionador",
+    "esfoliante",
+    "Kit reconstrutor",
+    "Botox white",
 
 
-export {produto}
-export{preco}
+ ]
+ var preco=[
+     46.00,
+     17.00,
+     20.00,
+     35.00,
+     95.00,
+     50.00,
+ ]
+ 
+ 
+ export {produto}
+ export{preco}
